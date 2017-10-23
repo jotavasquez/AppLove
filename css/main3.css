@@ -75,39 +75,45 @@ a:hover {
 /*ESCRIBE TU CÓDIGO DESDE AQUÍ*/
 
 header {
-  position: fixed;
+  top:0;
   width: 100%;
   background-color: #fff;
-  top:0;
-  font-weight: bold;
-  padding: 5% 14.7%;
-  display: inline-block;
-border-width: 0.5px;
-border-style: solid;
-border-color: black;
-
-
-}
-
-header div a{
-  float: left;
-  font-size: 85%;
-  padding-right: 4.6%;
-  margin :0 auto;
-  border-width: 0.5px;
+  padding: 5% auto;
+  border-width: 1px;
   border-style: solid;
   border-color: black;
+  display: flex;
+  position: fixed;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
 
+
+ul{
+  list-style: none;
+}
+
+.text-uppercase{
+  font-weight: bold;
+  font-size: 80%;
+  margin-left: 5%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  display: inline-flex;
+  justify-content: right;
 }
 
 header img {
-height: 8%;
+  height: 8%;
   width: 8%; 
-  display: inline-block;
+  margin: 2% 4%;
   border-width: 1px;
-  float: right;
   border-style: solid;
   border-color: black;
+  display: inline-flex;
+  justify-content: flex-end;
  }
 
 

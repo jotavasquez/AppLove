@@ -2,7 +2,8 @@
 
 Para completar tu web **AppLove** hemos creado este repositorio boilerplate (plantilla inicial) con todos los recursos que necesitas. Esto incluye las imágenes y algunas clases CSS que ya hemos creado para ti :)
 
-## Empieza por realizar un fork y clonar este repositorio
+## Empieza por realizar un fork y clonar este repositorio. 
+Ya está hecho
 
 1. Debes realizar un **fork** de este repositorio.
 
@@ -58,3 +59,12 @@ Este reto sera evaluado sobre lo siguiente:
 - Estructura de tus archivos
 - Archivo `README.md` actualizado y correctamente redactado
 - Uso de comentarios para hacer tu código más legible
+
+#Modificaciones:
+- Ajustado un menu superior con flex.
+- Divs sections con clases y nombres descriptivos de acuerdo al contenido.
+- Agregada al final galería de imágenes.
+- Insertada tipografía google fonts.
+- Comentarios descriptivos en HTML y CSS.
+- Uso de medidas relativas en porcentajes para responsive.
+- 
