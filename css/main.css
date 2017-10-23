@@ -1,6 +1,6 @@
 /*CLASES REUTILIZABLES*/
-* {
-  -webkit-box-sizing: border-box;
+* { /* todos los elementos trabajaran de de la misma manera, padding y border no incrementan su ancho*/
+  -webkit-box-sizing: border-box;  
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
@@ -21,6 +21,9 @@ body {
 
 img {
   vertical-align: middle;
+  max-width: 100%;/* redimensionar imágenes responsive */
+  height: auto; /* redimensionar imágenes responsive */
+
 }
 
 .container {
@@ -74,40 +77,156 @@ a:hover {
 
 /*ESCRIBE TU CÓDIGO DESDE AQUÍ*/
 
-header {
-  position: fixed;
-  width: 100%;
-  background-color: #fff;
+header { /* formato para menu superior*/
   top:0;
-  font-weight: bold;
-  padding: 5% 14.7%;
-  display: inline-block;
-border-width: 0.5px;
-border-style: solid;
-border-color: black;
-
-
-}
-
-header div a{
-  float: left;
-  font-size: 85%;
-  padding-right: 4.6%;
-  margin :0 auto;
-  border-width: 0.5px;
-  border-style: solid;
-  border-color: black;
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  padding: 0% 8%;
+  position: fixed; /* fija la barra de navegación arriba*/
+  display: flex; /* vista flex para maquetar*/
+  flex-direction: row;  /* tipo de disposición en flex*/
+  flex-wrap: wrap; /* disponible ajustarlo en multilínea*/
+  align-items: center; /*alinea los items al centro vertical*/
+  justify-content: flex-start; /*ajusta los items hacia la izquierda*/
 
 }
 
-header img {
-height: 8%;
-  width: 8%; 
-  display: inline-block;
-  border-width: 1px;
-  float: right;
-  border-style: solid;
-  border-color: black;
+header .text-uppercase{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700; /*peso de la fuente*/
+  font-size: 85.5%;
+  margin-left: 4%;
+  display: inline-flex; /* disposición flex como línea*/
+}
+
+header img { /* ajustes para el logo del menú*/
+  margin-left: auto;
+  margin-right: 3.6%;
+  margin-top: 1.2%;
+  margin-bottom: 1.2%;
+  width: 6.2%;
+  height: auto;
+  display: inline-flex;
  }
 
+
+section { /* ajustes generales para las section*/
+  text-align: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  display: flex; 
+} 
+
+.intro{ /* ajustes para section intro*/
+  width: 100%;
+  height: auto; 
+  background-image: url(../assets/images/bg-home.jpg);
+  background-size: cover; /* ajusta la página a todo el div*/
+  background-position: center; /* centra la imagen al medio siempre*/
+  color: #FFF;
+  display: flex; 
+  margin-top: 6%;
+}
+
+.intro .text {
+  padding: 8% 5%;
+}
+
+h1 {
+  font-size: 300%;
+}
+
+h2 {
+  font-size: 130%;
+}
+
+.intro p{
+  font-size: 85%;
+  margin-bottom: 7%;
+}
+
+.intro a{ /*ajustes para boton de intro*/
+  color:#FFF;
+  background-color:#00CC66;
+  padding: 2% 2.4%;
+  font-size: 80%;
+}
+
+.services { /* ajustes para services*/
+  background-color: #F17C72;
+  width: 100%;
+  height: auto;
+  color:#FFF;
+  text-align: center;
+  align-content: flex-start; /* se ubica a la derecha*/
+}
+
+.services h2 {
+  font-size: 200%;
+}
+
+.services h4 {
+  font-size: 95%;
+}
+
+.title{
+  width: 100%;
+  height: auto;
+  padding: 3% 5%;
+
+}
+
+.title .info {
+  display: inline-block; /* para que se comporte como línea*/
+  width: 15%;
+  margin: 5%;
+}
+
+.work div {
+  padding: 5% 15% 2%;
+}
+
+.work h2 {
+font-size: 200%;
+}
+
+.work h4 {
+  font-size: 90%;
+  padding-bottom: 1%;
+}
+
+.work .photos { /* ajustes generales para div contenedor de galería de imágenes*/
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  padding: 0 0 3%;
+}
+
+.work .photos div { /* ajustes para cada imageb*/
+  display: inline-block;
+  width: 30%;
+  height: auto;
+  padding: 0 3% 3%;
+  margin: 0 0%;
+}
+
+.photos div p { /* ajustes para pie de fotos*/
+  font-weight: 700;
+}
+
+
+footer{ /* ajustes para pie de página*/
+  text-align: center;
+  width: 100%;
+  height: auto;
+  background-color: #373B47;
+  color: #FFF;
+  padding:0.1%;
+  margin-bottom: -1%;
+  font-size: 90%;
+}
 
